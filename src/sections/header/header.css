@@ -1,0 +1,39 @@
+.app__header{
+    
+    /* min-height: 100vh; */
+    width: 100%;
+    /* aspect-ratio: 16/9; */
+    /* background-color: var(--color-section-yellow); */
+
+    background-image: url('../../assets/waves/header-waves/0.svg');
+    /* 4 */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+.app__header__intro{
+    display: flex;
+}
+.app__header__intro>div{
+    width: 100%;
+    /* border: 5px solid red; */
+}
+
+.app__header__intro-bigFilszu{
+    width: 100%;
+}
+.app__header__intro-bigFilszu>img{
+    width: 100%;
+    transform: translateY(50px);
+    object-fit: cover
+}
+
+
+
+
+/* .app__header__wave{
+    width: 100%;
+    height: 100vh;
+} */
