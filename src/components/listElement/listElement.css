@@ -1,0 +1,30 @@
+.listElement{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 2rem;
+}
+
+.listElement__prefix{
+    background-color: var(--color-text-yellow);
+    padding: 1px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    animation: scaleIn 1s ease-in-out;
+    width: 50px;
+    aspect-ratio: 1/1;
+
+}
+
+@keyframes scaleIn {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        scale: scale(1);
+    }
+}

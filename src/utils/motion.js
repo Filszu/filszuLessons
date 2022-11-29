@@ -18,23 +18,40 @@ export const navVariants = {
       // duration: 5.1,
     },
   },
+  
 };
 
 export const filszuFadeIn = ()=>
   ({
   hidden: {
-    x: '100px',
-    rotate: 120,
+    x: '100%',
+    y: 300,
+    rotate: 20,
+    scale:2,
   },
   show: {
     x: 0,
-    y: 0,
+    y: 50,
+    scale:1,
     rotate: 0,
     transition: {
-      type: 'spring',
+      // type: 'spring',
+      type: 'Tween',
+      // type: 'Inertia',
       stiffness: 300,
       damping: 140,
+      duration: 2,
+      bounce: 0.25,
+      // bounceStiffness: 100,
+      // repeat: Infinity,
     },
+  },
+  exit: {
+    x: '100%',
+    y: 300,
+    rotate: 20,
+    scale:0.5,
+    opacity: 0.5,
   },
 });
 

@@ -1,12 +1,23 @@
 /* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
+/* fancy */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* f2 */
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
 :root {
   --font-family: 'Manrope', sans-serif;
-  
+  --font-fancy-title: 'Monoton', cursive;
+
   --color-bg: #040f1f;
   --color-text: #fff;
-  --color-text-yellow: rgb(254, 249, 0);
+  /* --color-text-yellow: rgb(254, 249, 0); */
+  --color-text-yellow: #f7e800;
   --color-section-yellow: rgb(255, 234, 0);
+
+  
+  font-size: 80%;
   /* --color-footer : #031B34;
   --color-blog: #042c54;
   --color-text: #81AFDD;

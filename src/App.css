@@ -11,6 +11,10 @@ body{
   color: var(--color-text);
   /* color: yellow; */
   overflow-x: hidden;
+
+  font-family: 'Inconsolata', monospace;
+
+
 }
 
 a{
