@@ -2,7 +2,7 @@
     
     /* min-height: 50vh; */
     width: 100%;
-    max-height: 100vh !important;
+    height: 100vh!important;
     /* aspect-ratio: 16/9; */
     /* background-color: var(--color-section-yellow); */
 
@@ -18,25 +18,42 @@
     display: flex;
 }
 .app__header__intro>div{
-    width: 100%;
+    /* width: 100%; */
     /* border: 5px solid red; */
 }
 
 .app__header__intro-bigFilszu{
     width: 100%;
+    max-height: 100vh;
 }
 .app__header__intro-bigFilszu>div{
     width: 100%;
-    max-height: 100%;
-    /* object-fit: cover; */
+    height: 100%;
+    /* background-color: blueviolet; */
+    object-fit: cover;
+    /* position:relative;
+    top: 50px; */
+    /* margin: 50px 0 0 0; */
+    
 }
 .app__header__intro-bigFilszu>div>img{
     width: 100%;
-    /* transform: translateY(50px); */
+    max-height: 100%;
+    /* height:auto; */
+
+    
     object-fit: cover;
+    /* position:relative; */
+    top: 50px;
+    /* transform: translateY(50px);
+     */
+    
+    
+    
 }
 
 .app__header__intro__greeting{
+    width: 100%;
    display: flex;
    align-items: center;
    flex-direction: column;

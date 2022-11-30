@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import {planetVariants,fadeIn,slideIn,filszuFadeIn,staggerContainer} from '../../utils/motion'
 
 // imports img
-import filip1 from '../../assets/img/filszuOK.png'
+import filip2 from '../../assets/img/filszuOK2.png'
 
 
 import './header.css'
@@ -58,7 +58,7 @@ function Header({content}) {
                 
                 
                 >
-                <img src={filip1} alt="Me - Filip Filszu Szumowski" />
+                <img src={filip2} alt="Me - Filip Filszu Szumowski" />
 
             </motion.div>
             </div>

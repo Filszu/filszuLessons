@@ -31,7 +31,8 @@ export const filszuFadeIn = ()=>
   },
   show: {
     x: 0,
-    y: 50,
+    // y: 50,
+    y:0,
     scale:1,
     rotate: 0,
     transition: {
