@@ -22,10 +22,7 @@
      
     width: 100%;
     height: 100%;
-     /* display: grid;
-     grid-template-columns: 1fr 1fr; */
-     /* grid-area: greeting bigFilszu;
-      */
+
 
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -141,5 +138,13 @@
 }
 
 @media screen and (max-width:1024px) {
-    
+    .app__header__intro{   
+         /* grid-template-columns: 1fr 1fr; */
+         grid-template-rows: 100%;
+   
+
+         grid-template-areas: 
+         "greeting greeting"
+         "bigFilszu bigFilszu";
+   }
 }

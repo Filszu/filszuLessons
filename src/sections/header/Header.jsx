@@ -13,7 +13,7 @@ import { ListElement } from '../../components'
 
 function Header({content}) {
   return (
-    <header className='app__header'>
+    <header className='app__header fullScreenSection'>
         <motion.div
              variants={staggerContainer}
              initial="hidden"
@@ -31,6 +31,9 @@ function Header({content}) {
                     variants={fadeIn('down', 'spring', 1.5, 1)}
 
                 >{content.title}</motion.h1>
+
+                {/* separate to another gtid elemnts */}
+                
                 <motion.h2
                      variants={fadeIn('down', 'spring', 1.6,1)}
                 >{content.subtitle}</motion.h2>
@@ -46,6 +49,7 @@ function Header({content}) {
                 
               
             </div>
+            
             <div className='app__header__intro-bigFilszu'>
         
 

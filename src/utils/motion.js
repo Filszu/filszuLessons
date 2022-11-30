@@ -48,11 +48,12 @@ export const filszuFadeIn = ()=>
     },
   },
   exit: {
-    x: '100%',
-    y: 300,
-    rotate: 20,
-    scale:0.5,
-    opacity: 0.5,
+    // x: '100%',
+    // y: 300,
+    // rotate: 20,
+    // scale:0.5,
+    // opacity: 0.5,
+    visbility: false,
   },
 });
 

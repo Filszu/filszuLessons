@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import './App.css';
-import {Header} from './sections';
+import {Header, Main} from './sections';
 
 import {pageContent} from './constants/content'
 
@@ -12,7 +12,8 @@ function App() {
    <>
     <div className="app">
       <Header content={pageTextContent['header']}/>
-      
+      <Main/>
+      <Main/>
     </div>
    </>
   );
