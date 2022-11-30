@@ -11,6 +11,7 @@ body{
   color: var(--color-text);
   /* color: yellow; */
   overflow-x: hidden;
+  /* overflow-y: hidden; */
 
   font-family: 'Inconsolata', monospace;
 
@@ -24,5 +25,5 @@ a{
 
 .app{
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
