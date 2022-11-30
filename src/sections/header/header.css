@@ -2,7 +2,7 @@
     
     /* min-height: 50vh; */
     width: 100%;
-    height: 100vh!important;
+    min-height: 100vh;
     /* aspect-ratio: 16/9; */
     /* background-color: var(--color-section-yellow); */
 
@@ -10,6 +10,8 @@
     /* 4 */
     background-repeat: no-repeat;
     background-size: cover;
+
+    /* border: 15px dashed plum; */
 
     display: flex;
     align-items: center;
@@ -23,17 +25,19 @@
     width: 100%;
     height: 100%;
 
+    display: grid;
 
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 50vh 50vh;
 
-      display: grid;
-      grid-template-areas: 
-      "greeting bigFilszu"
-      "greeting bigFilszu";
+     grid-template-areas: 
+        "greet bigFilszu"
+        "about bigFilszu"
+
+     ;
       
      
-    /* align-items: center; */
+    
 }
 .app__header__intro>div{
     /* width: 100%; */
@@ -42,7 +46,8 @@
 
 .app__header__intro-bigFilszu{
     
-    width: 100%;
+    /* width: 100%; */
+    flex:1;
     max-height: 100vh;
 
     grid-area: bigFilszu;
@@ -76,7 +81,8 @@
 }
 
 .app__header__intro__greeting{
-    width: 100%;
+    /* width: 100%; */
+    flex:1;
    display: flex;
    align-items: center;
    flex-direction: column;
@@ -84,9 +90,14 @@
    padding: 40px;
    /* justify-content:space-around */
 
-   grid-area:greeting;
-
 }
+.app__header__intro__greeting-hello{
+    grid-area: greet;
+}
+.app__header__intro__greeting-about{
+    grid-area: about;
+}
+
 
 .app__header__intro__greeting h1{
     /* font-family: var(--font-fancy-title); */
@@ -120,6 +131,11 @@
 .app__header__intro__greeting h2{
     font-size: 4rem;
 }
+.app__header__intro__greeting h3{
+    padding-top: 30px;
+    font-size: 3rem;
+    text-align: right;
+}
 .app__header__intro__greeting li,p{
     font-size: 2.5rem;
 }
@@ -133,18 +149,40 @@
 } */
 
 .app__header__intro>div{
-    width: 100%;
-    border: 5px solid red;
+    /* width: 100%; */
+    /* border: 5px solid red; */
 }
 
 @media screen and (max-width:1024px) {
     .app__header__intro{   
-         /* grid-template-columns: 1fr 1fr; */
-         grid-template-rows: 100%;
-   
+       
+         /* display: block;
+          */
 
-         grid-template-areas: 
-         "greeting greeting"
-         "bigFilszu bigFilszu";
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(3,100vh
+          );
+        grid-template-areas: 
+        "greet"
+        "bigFilszu"
+        "about"
+
+     ;
+         
+   }
+   .app__header__intro__greeting{
+    background-image: url('../../assets/waves/header-waves/s2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    /* height: 100vh; */
+   }
+   .app__header__intro-bigFilszu{
+    background-image: url('../../assets/waves/header-waves/f1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* height: 100vh; */
    }
 }

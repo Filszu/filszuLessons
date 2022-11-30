@@ -32,7 +32,7 @@ a{
 }
 
 .fullScreenSection{
-  height: 100vh;
+  /* height: 100vh; */
   scroll-snap-align: start;
   /* background-color: crimson; */
 }

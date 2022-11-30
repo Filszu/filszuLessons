@@ -1,5 +1,5 @@
 .app__main{
     height: 100vh;
-    background-color: blue;
+    background-color: rgba(172, 251, 0, 0.625);
     border: 50px dotted green;
 }

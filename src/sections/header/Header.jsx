@@ -14,17 +14,17 @@ import { ListElement } from '../../components'
 function Header({content}) {
   return (
     <header className='app__header fullScreenSection'>
-        <motion.div
-             variants={staggerContainer}
-             initial="hidden"
-             whileInView="show"
-             viewport={{ once: false, amount: 0.25 }}
-
-             
+        <div          
              
              className='app__header__intro'
         >
-            <div className='app__header__intro__greeting'>
+            <motion.div     
+                className='app__header__intro__greeting app__header__intro__greeting-hello'
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
                 
                 <motion.h1
                     // variants={slideIn('down','spring',1,1)}
@@ -37,6 +37,52 @@ function Header({content}) {
                 <motion.h2
                      variants={fadeIn('down', 'spring', 1.6,1)}
                 >{content.subtitle}</motion.h2>
+
+                
+                
+              
+            </motion.div>
+
+            
+            
+            <motion.div 
+                className='app__header__intro-bigFilszu'
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                
+            >
+        
+
+            
+                <motion.div
+                    // variants={planetVariants('right')}
+                    variants={filszuFadeIn()}
+                    // initial="hidden"
+                    // exit="exit"
+                    
+                    
+                    >
+                    <img src={filip2} alt="Me - Filip Filszu Szumowski" />
+
+                </motion.div>
+            </motion.div>
+
+            <motion.div     
+                className='app__header__intro__greeting app__header__intro__greeting-about'
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.35 }}
+            >
+                
+                <motion.h3
+                     variants={fadeIn('down', 'spring', 1.8,1)}
+                >{content.listTitle}</motion.h3> 
+                
+                
+
                 <ul>
                     {content.list.map((content, index) => (<ListElement
                         key={index}
@@ -46,28 +92,11 @@ function Header({content}) {
                     
                     />))}
                 </ul>
-                
-              
-            </div>
-            
-            <div className='app__header__intro-bigFilszu'>
-        
-
-            
-            <motion.div
-                // variants={planetVariants('right')}
-                variants={filszuFadeIn()}
-                // initial="hidden"
-                // exit="exit"
-                
-                
-                >
-                <img src={filip2} alt="Me - Filip Filszu Szumowski" />
 
             </motion.div>
-            </div>
 
-        </motion.div>
+
+        </div>
     </header>
   )
 }
