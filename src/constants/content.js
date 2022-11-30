@@ -3,8 +3,9 @@ const pageContent = {
         header:{
             title:`Hey i'm Filshu`,
             subtitle:<>I'm a web dev,<br/>
-            and i can <b>help</b> you!! <br/><br/>Wanna:</>,
+            and i can <b>help</b> you!! <br/></>,
             extra:`that's why i'm here`,
+            listTitle:"Wanna:",
             list:[
                 {id:'💻', txt:`learn programming?`},
                 {id:'🖥',txt:`pass your IT exam?`},
