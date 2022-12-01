@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-import './main.css'
+import './mainSection.css'
 
-function Main() {
+function MainSection() {
   return (
     <main className='app__main fullScreenSection'>
         Main
@@ -11,4 +11,4 @@ function Main() {
   )
 }
 
-export default Main
+export default MainSection

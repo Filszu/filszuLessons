@@ -1,8 +1,8 @@
 import Header from './header/Header'
-import Main from './main/Main'
+import MainSection from './main/MainSection'
 
 export {
-    Header, Main,
+    Header, MainSection,
 }
 
 // export {default as Blog} from './blog/Blog'

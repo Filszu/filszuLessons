@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: start;
     font-size: 2rem;
+    margin: 10px 0;
 }
 
 .listElement__prefix{
@@ -13,8 +14,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px;
-    animation: scaleIn 1s ease-in-out;
+    margin: 0 10px;
+    /* animation: scaleIn 1s ease-in-out; */
     width: 50px;
     aspect-ratio: 1/1;
 
