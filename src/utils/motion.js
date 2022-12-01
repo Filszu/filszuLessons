@@ -114,11 +114,13 @@ export const textContainer = {
 export const textVariant2 = {
   hidden: {
     opacity: 0,
-    y: 20,
+    y: -200,
+    // x: 10,
   },
   show: {
     opacity: 1,
     y: 0,
+    // x:0,
     transition: {
       type: 'tween',
       ease: 'easeIn',

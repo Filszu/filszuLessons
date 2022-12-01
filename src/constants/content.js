@@ -18,6 +18,32 @@ const pageContent = {
                 // '💬🗨or just have a nice conversation'
 
             ]
+        },
+        main:{
+            title:`learn with me`,
+            languages:[
+                {
+                    img:'css.svg',
+                    desc:'css',
+                },
+                {
+                    img:'js.svg',
+                    desc:'js',
+                },
+                {
+                    img: 'html.svg',
+                    desc:'html',
+                },
+                {
+                    img:'php.svg',
+                    desc:'php',
+                },
+                {
+                    img:'python.svg',
+                    desc:'python',
+                },
+                
+            ]
         }
         
     },

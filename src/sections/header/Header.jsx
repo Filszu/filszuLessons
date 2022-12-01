@@ -13,7 +13,8 @@ import { ListElement } from '../../components'
 
 function Header({content}) {
   return (
-    <header className='app__header fullScreenSection'>
+    <header className='app__header '> 
+    {/* fullScreenSection */}
         <div          
              
              className='app__header__intro'

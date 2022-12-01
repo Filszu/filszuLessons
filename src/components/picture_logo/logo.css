@@ -1,0 +1,57 @@
+.logo__container__el{
+ 
+    padding: 40px;
+    /* flex: 20%; */
+    /* width: 20%; */
+
+    /* flex: 25rem; */
+
+    /* flex: clamp(10rem,20vw,25rem); */
+    width: 25rem;
+    
+    
+  
+  }
+
+  .logo__container__el:hover img{
+    
+    transform: scale(1.1);
+    /* text-decoration: underline; */
+  
+  
+  }
+  
+  .logo__container__el img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    transition: all .2s ease-in-out;
+    
+  }
+  
+  .logo__container__el p{
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+
+
+  @media screen and (max-width:1200px) {
+    .logo__container__el{
+        /* flex: 20rem; */
+        width: 20rem;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    .logo__container__el{
+        /* flex: 15rem; */
+        width: 15rem;
+        padding: 20px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .logo__container__el{
+        /* flex: 10rem; */
+        width: 10rem;
+    }
+  }

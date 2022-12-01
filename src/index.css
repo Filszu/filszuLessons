@@ -6,9 +6,13 @@
 /* f2 */
 @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 :root {
   --font-family: 'Manrope', sans-serif;
   --font-fancy-title: 'Monoton', cursive;
+  --font-fancy-title2: 'Slackey', cursive;
+  --font-terminal:'Silkscreen', cursive;
 
   --color-bg: #040f1f;
   --color-text: #fff;

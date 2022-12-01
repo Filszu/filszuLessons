@@ -12,10 +12,7 @@ function App() {
    <>
     <div className="app">
       <Header content={pageTextContent['header']}/>
-      <MainSection/>
-      <MainSection/>
-      <MainSection/>
-    
+      <MainSection content={pageTextContent['main']}/>    
 
     </div>
    </>
