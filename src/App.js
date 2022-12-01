@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import './App.css';
-import {Header, MainSection,} from './sections';
+import {Header, MainSection,ContactSection} from './sections';
 
 import {pageContent} from './constants/content'
 
@@ -13,6 +13,7 @@ function App() {
     <div className="app">
       <Header content={pageTextContent['header']}/>
       <MainSection content={pageTextContent['main']}/>    
+      <ContactSection content={pageTextContent['contact']}/>    
 
     </div>
    </>

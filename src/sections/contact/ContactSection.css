@@ -1,0 +1,32 @@
+.app__contact{
+    height: 100vh;
+    /* background-color: rgba(172, 251, 0, 0.625);
+    border: 50px dotted green; */
+
+    background-image: url('../../assets/waves/section-waves/3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 60px;
+
+}
+
+.app__main__header{
+    font-family: var(--font-terminal);
+    margin: 20px;
+}
+
+.app__main__header p {
+    /* font-size: 8rem; */
+    font-size: clamp(1.5rem, 6vw, 8rem);
+    display: flex;
+}
+
+@media screen and (max-width:1200px) {
+    .app__main{
+        align-items: center;
+    }
+}

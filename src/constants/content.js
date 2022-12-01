@@ -44,7 +44,39 @@ const pageContent = {
                 },
                 
             ]
-        }
+        },
+        contact:{
+            title:`feel free to write`,
+            links:[
+                {
+                    img:'gmail.svg',
+                    imgDesc:'gmail filipszumowski05@gmail.com',
+                    url: 'mailto:filipszumowski05@gmail.com',
+                    desc:'Filip'
+                },
+                {
+                    img:'discord.svg',
+                    imgDesc:'discord',
+                    url: 'https://bit.ly/filszuLessonsDC',
+                    desc:'Filipp#2385'
+                },
+                {
+                    img:'github_white.svg',
+                    imgDesc:'github',
+                    url: 'https://github.com/Filszu/',
+                    desc:'Filszu'
+                },
+                {
+                    img:'ig.svg',
+                    imgDesc:'ig',
+                    url: 'https://www.instagram.com/filip_kyokushin/',
+                    desc:'@filip_kyokushin'
+                },
+                
+                
+                
+            ]
+        },
         
     },
     pl:{
