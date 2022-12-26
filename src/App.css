@@ -43,9 +43,19 @@ a{
 
 .logos__container{
   height: 100%;
+  width: 100%;
+  /* margin: 100px; */
   display: flex;
   align-items: center;
   justify-content: space-around;
 
   flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:480px) {
+  .logos__container{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }

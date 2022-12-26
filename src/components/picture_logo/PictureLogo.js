@@ -10,6 +10,7 @@ function PictureLogo({logo,index}) {
     console.log(index)
     const zoomDelay = index?index*0.2:0.3;
   return (
+
     <a href={logo.url?logo.url:"#"}>
       <motion.div className='logo__container__el'
           variants={zoomIn(zoomDelay,1)}
@@ -20,6 +21,7 @@ function PictureLogo({logo,index}) {
           <p>{logo.desc}</p>
       </motion.div>
     </a>
+    
   )
 }
 

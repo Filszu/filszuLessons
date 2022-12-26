@@ -9,7 +9,7 @@ import PictureLogo from '../../components/picture_logo/PictureLogo'
 
 function MainSection({content}) {
   return (
-    <motion.main className='app__main fullScreenSection'
+    <motion.main className='app__main fullScreenSection' id="learnWithMe"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"

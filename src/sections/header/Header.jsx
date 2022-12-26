@@ -1,10 +1,10 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-import {planetVariants,fadeIn,slideIn,filszuFadeIn,staggerContainer} from '../../utils/motion'
+import {fadeIn,filszuFadeIn,staggerContainer} from '../../utils/motion'
 
 // imports img
-import filip2 from '../../assets/img/filszuOK2.png'
+import filszuOK from '../../assets/img/filszuOK2min.png'
 
 
 import './header.css'
@@ -13,7 +13,7 @@ import { ListElement } from '../../components'
 
 function Header({content}) {
   return (
-    <header className='app__header '> 
+    <header className='app__header' id="header"> 
     {/* fullScreenSection */}
         <div          
              
@@ -65,7 +65,7 @@ function Header({content}) {
                     
                     
                     >
-                    <img src={filip2} alt="Me - Filip Filszu Szumowski" />
+                    <img src={filszuOK} alt="Me - Filip Filszu Szumowski" />
 
                 </motion.div>
             </motion.div>
