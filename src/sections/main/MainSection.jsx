@@ -9,13 +9,13 @@ import PictureLogo from '../../components/picture_logo/PictureLogo'
 
 function MainSection({content}) {
   return (
-    <motion.main className='app__main fullScreenSection' id="learnWithMe"
+    <motion.main className='app__fullScreen app__main fullScreenSection' id="learnWithMe"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-        <div className="app__main__header">
+        <div className="app__fullScreen__header">
           {/* <h1>{content.title}</h1> */}
           {/* {} */}
           <TypingText title={content.title}/>

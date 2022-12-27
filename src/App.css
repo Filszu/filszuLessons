@@ -52,10 +52,44 @@ a{
   flex-wrap: wrap;
 }
 
+.app__fullScreen{
+  height: 100vh;
+  /* background-color: rgba(172, 251, 0, 0.625);
+  border: 50px dotted green; */
 
-@media screen and (max-width:480px) {
+  /* background-image: url('assets/waves/section-waves/1.svg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 60px;
+
+}
+
+.app__fullScreen__header{
+  font-family: var(--font-terminal);
+  margin: 20px;
+}
+
+.app__fullScreen__header p {
+  /* font-size: 8rem; */
+  font-size: clamp(1.5rem, 6vw, 8rem);
+  display: flex;
+}
+
+@media screen and (max-width:1200px) {
+  .app__fullScreen{
+      align-items: center;
+  }
+}
+
+
+
+@media screen and (max-width:380px) {
   .logos__container{
-    flex-direction: column;
-    flex-wrap: nowrap;
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
   }
 }

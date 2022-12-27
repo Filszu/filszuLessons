@@ -9,13 +9,13 @@ import PictureLogo from '../../components/picture_logo/PictureLogo'
 
 function ContactSection({content}) {
   return (
-      <motion.section className='app__contact fullScreenSection'
+      <motion.section className='app__fullScreen app__contact fullScreenSection '
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
       >
-          <div className="app__main__header">
+          <div className="app__fullScreen__header">
             {/* <h1>{content.title}</h1> */}
             {/* {} */}
             <TypingText title={content.title}/>

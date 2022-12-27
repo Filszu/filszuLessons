@@ -6,16 +6,29 @@
 
     /* flex: 25rem; */
 
-    /* flex: clamp(10rem,20vw,25rem); */
+    /* flex: clamp(5rem,15rem,15rem); */
+    /* width: clamp(6rem,60%,25rem); */
+
     width: 25rem;
-
-    flex:1;
+    /* flex:1; */
+    /* width: 100%; */
+    /* flex-basis:1; */
 
     
   
     
     
   
+  }
+  .logo__container__el img{
+    width: 100%;
+    padding: 10px;
+
+    
+    
+    aspect-ratio: 1/1;
+    transition: all .2s ease-in-out;
+    
   }
 
   .logo__container__el:hover img{
@@ -26,15 +39,7 @@
   
   }
   
-  .logo__container__el img{
-    width: 100%;
-
-    
-    
-    aspect-ratio: 1/1;
-    transition: all .2s ease-in-out;
-    
-  }
+ 
   
   .logo__container__el p{
     text-align: center;
@@ -46,16 +51,16 @@
   }
 
 
-  @media screen and (max-width:1200px) {
+   @media screen and (max-width:1200px) {
     .logo__container__el{
-        /* flex: 20rem; */
+
         width: 18rem;
     }
   }
 
   @media screen and (max-width:1024px) {
     .logo__container__el{
-        /* flex: 15rem; */
+        
         width: 15rem;
         padding: 20px;
     }
@@ -63,16 +68,16 @@
 
   @media screen and (max-width:768px) {
     .logo__container__el{
-        /* flex: 10rem; */
+       
         width: 10rem;
     }
   }
-  @media screen and (max-width:480px) {
+  @media screen and (max-width:380px) {
     .logo__container__el{
-      /* width: clamp(5rem, 2.5vw, 7rem); */
-      width: 6rem;
+   
+      width: 7rem;
         flex:1;
-        padding: 10px;
+        /* padding: 10px; */
         margin: 0;
     }
-  }
+  } 
