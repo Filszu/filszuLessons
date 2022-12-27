@@ -49,14 +49,25 @@ const pageContent = {
             title:`You can trust me`,
             reviews:[
                 {
+                    reviewId:1,
+                    reviewTitle:"",
+                    reviewBody:"Lorem",
+                    date:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nulla facilis neque corporis beatae omnis id mollitia? ",
+                    stars: 5,
+                    userProfileImg:"",
+                    userName:"Konradinio"
+
+                },
+                {
+                    reviewId:2,
                     reviewTitle:"",
                     reviewBody:"",
                     date:"",
                     stars: 5,
-                    studentProfileImg:"",
-                    studentName:"Konradinio"
+                    userProfileImg:"",
+                    userName:"Kacper"
 
-                }
+                },
             ]
             
         },

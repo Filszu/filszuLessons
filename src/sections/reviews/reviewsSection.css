@@ -1,0 +1,10 @@
+.app__reviewConatiner{
+    width: 50%;
+    height: 100%;
+    /* align-items: center;justify-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-self: center;
+    
+}

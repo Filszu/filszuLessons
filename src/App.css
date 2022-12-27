@@ -18,19 +18,21 @@ body{
 
 }
 *::-webkit-scrollbar {
-  width: 5px; 
-  height: 5px;              
+  /* width: 5px;  */
+  /* height: 5px;               */
+  /* width: 0px;
+  background: transparent; */
 }
 
 *::-webkit-scrollbar-track {
-  /* background-color: var(--color-section-yellow) */
+
  
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: hsl(46, 100%, 50%);  
-  /* background-color: var(--color-bg); */
-  border-radius: 1rem; 
+  /* background-color: hsl(46, 100%, 50%);  
+
+  border-radius: 1rem;  */
   
 }
 
@@ -51,9 +53,10 @@ a{
   scroll-snap-type: y mandatory; */
 
   scroll-snap-type: y mandatory;
-  max-height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  max-height: 100vh;
+  
 
 }
 

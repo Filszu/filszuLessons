@@ -4,12 +4,14 @@ import {motion} from 'framer-motion'
 import {slideIn,staggerContainer} from '../../utils/motion'
 
 
-import { TypingText } from '../../components'
-import PictureLogo from '../../components/picture_logo/PictureLogo'
+import { ReviewCard, TypingText } from '../../components'
+
+
+import './reviewsSection.css'
 
 function ReviewsSection({content}) {
   return (
-    <motion.section className='app__fullScreen app__main fullScreenSection' id="learnWithMe"
+    <motion.section className='app__fullScreen fullScreenSection' id="learnWithMe"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
@@ -19,6 +21,10 @@ function ReviewsSection({content}) {
           {/* <h1>{content.title}</h1> */}
           {/* {} */}
           <TypingText title={content.title}/>
+        </div>
+
+        <div className="app__reviewConatiner">
+            <ReviewCard reviews={content.reviews}/>
         </div>
 
         
