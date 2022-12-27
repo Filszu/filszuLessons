@@ -1,5 +1,38 @@
+
 .reviewCard{
     width: 100%;
-    background-color: rgb(1, 32, 21);
-    padding: 20px;
+    background-color: var(--color-section-yellow);
+    padding: 80px;
+    margin: 10px;
+    border-radius: 2rem;
+    min-height: 10rem;
+    color: var(--color-text-dark);
+    
 }
+
+
+.reviewCard h2{
+    font-size: 5rem;
+}
+
+.reviewCard__userImg{
+    width: 20rem;
+    border-radius: 50%;
+    position: relative;
+    padding: 30px;
+    
+   
+}
+
+.reviewCard__userImg img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: relative;
+    position: absolute;
+    /* bottom: 15rem; */
+    top: -15rem;
+    border: 2rem solid var(--color-bg);
+    background-color: var(--color-bg);;
+}
+

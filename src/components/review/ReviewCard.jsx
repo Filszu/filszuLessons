@@ -37,6 +37,8 @@ const ReviewCard = ({reviews}) => {
   const [currReview, setCurrReview] = useState(0)
   const [direction, setDirection] = useState(0)
 
+  const review = reviews[currReview];
+
   console.log(reviews)
 
 
@@ -44,7 +46,8 @@ const ReviewCard = ({reviews}) => {
     // setPage([page + newDirection, newDirection]);
     console.log(`direction:${newDirection}`)
 
-    let newPage =currReview+newDirection;;
+    let newPage =currReview+newDirection;
+    
 
     console.log(`new page: ${newPage}`)
 
@@ -68,13 +71,15 @@ const ReviewCard = ({reviews}) => {
   return (
 
     <>
-      <AnimatePresence initial={false} custom={direction}>
+      <AnimatePresence initial={false} custom={direction} className>
         <motion.section className="reviewCard"
           drag="x"
           whileDrag={{ scale: 1.1 }}
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={1} //back to original pos
           dragTransition={{ bounceStiffness: 100, bounceDamping: 10 }}
+
+          variants={variants}
 
           onDragEnd={(e, { offset, velocity }) => {
             const swipe = swipePower(offset.x, velocity.x);
@@ -87,8 +92,11 @@ const ReviewCard = ({reviews}) => {
           }}
 
         >
-          <h1> {reviews[currReview].userName}</h1>
-          <h3>{reviews[currReview].reviewBody}</h3>
+          <div className="reviewCard__userImg">
+            <img src={review.userProfileImg} alt="user" />
+          </div>
+         <h2>{review.reviewTitle}</h2>
+         <p>{review.reviewBody}</p>
          
         </motion.section>
       </AnimatePresence>

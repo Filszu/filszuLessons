@@ -50,30 +50,30 @@ const pageContent = {
             reviews:[
                 {
                     reviewId:0,
-                    reviewTitle:"",
+                    reviewTitle:"BEST TUTOR",
                     reviewBody:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nulla facilis neque corporis beatae omnis id mollitia? ",
                     stars: 5,
-                    userProfileImg:"",
+                    userProfileImg:"https://avatars.dicebear.com/api/pixel-art-neutral/your-custom-seed.svg",
                     userName:"Konradinio"
 
                 },
                 {
                     reviewId:1,
-                    reviewTitle:"",
-                    reviewBody:"",
+                    reviewTitle:"TITLE",
+                    reviewBody:"em ipsum dolor sit amet, consectetur adipisicing elit. Assum",
                     date:"",
                     stars: 5,
-                    userProfileImg:"",
+                    userProfileImg:"https://avatars.dicebear.com/api/open-peeps/your-custofsfm-seed.svg",
                     userName:"Kacper"
 
                 },
                 {
                     reviewId:3,
-                    reviewTitle:"",
-                    reviewBody:"",
+                    reviewTitle:"TITLE",
+                    reviewBody:"em ipsum dolor sit amet, consectetur adipisicing elit. Assumem ipsum dolor sit amet, consectetur adipisicing elit. Assum",
                     date:"",
                     stars: 5,
-                    userProfileImg:"",
+                    userProfileImg:"https://avatars.dicebear.com/api/open-peeps/your-custofsfm-seedd.svg",
                     userName:"Iron"
 
                 },
@@ -117,6 +117,8 @@ const pageContent = {
     pl:{
 
     }
+
+    
 }
 
 export {pageContent}

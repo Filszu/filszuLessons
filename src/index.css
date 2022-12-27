@@ -16,9 +16,11 @@
 
   --color-bg: #040f1f;
   --color-text: #fff;
+  --color-text-dark:hsl(215, 46%, 9%);
   /* --color-text-yellow: rgb(254, 249, 0); */
   --color-text-yellow: #f7e800;
   --color-section-yellow: rgb(255, 234, 0);
+  --color-elements:rgb(255, 225, 0);
 
   
   font-size: 80%;
