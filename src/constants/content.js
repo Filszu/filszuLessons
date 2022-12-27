@@ -45,6 +45,21 @@ const pageContent = {
                 
             ]
         },
+        reviews:{
+            title:`You can trust me`,
+            reviews:[
+                {
+                    reviewTitle:"",
+                    reviewBody:"",
+                    date:"",
+                    stars: 5,
+                    studentProfileImg:"",
+                    studentName:"Konradinio"
+
+                }
+            ]
+            
+        },
         contact:{
             title:`feel free to write`,
             links:[
