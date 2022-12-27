@@ -34,20 +34,41 @@ const swipePower = (offset, velocity) => {
 
 
 const ReviewCard = ({reviews}) => {
-  const [currReview, setCurrReview] = useState(1)
+  const [currReview, setCurrReview] = useState(0)
+  const [direction, setDirection] = useState(0)
+
+  console.log(reviews)
 
 
   const paginate = (newDirection) => {
     // setPage([page + newDirection, newDirection]);
-    console.log(newDirection)
-    setCurrReview(currReview+newDirection)
+    console.log(`direction:${newDirection}`)
+
+    let newPage =currReview+newDirection;;
+
+    console.log(`new page: ${newPage}`)
+
+    if(newPage<0){
+      newPage=reviews.length-1;
+    }
+    else if(newPage>=reviews.length){
+      newPage=0;
+    }
+    // else{
+      
+    // }
+
+    setCurrReview(newPage)
+    setDirection(newDirection)
 
   };
+
+  // const currReviewIndex = wrap(1, reviews.length+1, currReview);
 
   return (
 
     <>
-      <AnimatePresence>
+      <AnimatePresence initial={false} custom={direction}>
         <motion.section className="reviewCard"
           drag="x"
           whileDrag={{ scale: 1.1 }}
@@ -59,14 +80,16 @@ const ReviewCard = ({reviews}) => {
             const swipe = swipePower(offset.x, velocity.x);
 
             if (swipe < -swipeConfidenceThreshold) {
-              paginate(1);
-            } else if (swipe > swipeConfidenceThreshold) {
               paginate(-1);
+            } else if (swipe > swipeConfidenceThreshold) {
+              paginate(1);
             }
           }}
 
         >
-          {reviews[currReview].userName}
+          <h1> {reviews[currReview].userName}</h1>
+          <h3>{reviews[currReview].reviewBody}</h3>
+         
         </motion.section>
       </AnimatePresence>
     </>
