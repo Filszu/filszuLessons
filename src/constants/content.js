@@ -50,31 +50,41 @@ const pageContent = {
             reviews:[
                 {
                     id:0,
-                    reviewTitle:"BEST TUTOR",
-                    reviewBody:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nulla facilis neque corporis beatae omnis id mollitia? ",
+                    reviewTitle:"Zna się na rzeczy",
+                    reviewBody:"Dzięki Filipowi nauczyłem się dużo więcej niż w szkole, programowanie stało się moją pasją a jego nauki weszły mi głęboko do głowy, mogę powiedzieć że bardzo polecam!",
+                    date:"",
                     stars: 5,
-                    userProfileImg:"https://avatars.dicebear.com/api/pixel-art-neutral/your-custom-seed.svg",
-                    userName:"Konradinio"
+                    userProfileImg:"https://cdn.discordapp.com/attachments/973957498543411250/1057718921911865485/IMG_20221228_185644.jpg",
+                    userName:"Kacper O."
 
                 },
                 {
                     id:1,
-                    reviewTitle:"TITLE",
-                    reviewBody:"em ipsum dolor sit amet, consectetur adipisicing elit. Assum",
+                    reviewTitle:"Zna się na rzeczy",
+                    reviewBody:"...Filszu. Widać, że znasz się na rzeczy",
                     date:"",
                     stars: 5,
-                    userProfileImg:"https://avatars.dicebear.com/api/open-peeps/your-custofsfm-seed.svg",
-                    userName:"Kacper"
+                    userProfileImg:"https://scontent.fpoz5-1.fna.fbcdn.net/v/t39.30808-6/306949728_579037663921392_9108915645010585965_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_c6pgWSCLXkAX9spXEr&_nc_ht=scontent.fpoz5-1.fna&oh=00_AfC1GF7P5vY4hRVLJiLmLMZEiZLR-5EYG9UmqFlWoQN12A&oe=63B15D41",
+                    userName:"Aleks P."
 
                 },
                 {
                     id:2,
-                    reviewTitle:"TITLE",
-                    reviewBody:"em ipsum dolor sit amet, consectetur adipisicing elit. Assumem ipsum dolor sit amet, consectetur adipisicing elit. Assum",
+                    reviewTitle:"BEST TUTOR",
+                    reviewBody:"Poważne podejście do lekcji",
+                    stars: 5,
+                    userProfileImg:"https://avatars.dicebear.com/api/avataaars/yougdfgdggdggdgdggdgdgggdggdgggggggggggggggggustom-seed.svg",
+                    userName:"Seweryn"
+
+                },
+                {
+                    id:3,
+                    reviewTitle:"Bardzo dobry nauczyciel",
+                    reviewBody:"Bardzo dobry nauczyciel naprawde polecam",
                     date:"",
                     stars: 5,
-                    userProfileImg:"https://avatars.dicebear.com/api/open-peeps/your-custofsfm-seedd.svg",
-                    userName:"Iron"
+                    userProfileImg:"https://avatars.dicebear.com/api/micah/konradinio.svg",
+                    userName:"Konradinio"
 
                 },
             ]

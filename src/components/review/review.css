@@ -16,7 +16,9 @@
     border-radius: 2rem;
     min-height: 10rem;
     color: var(--color-text-dark);
-    font-size: clamp(3rem, 4vw, 6rem);
+    /* font-size: clamp(3rem, 4vw, 6rem); */
+    /* font-size: clamp(2rem, 3vw, 5rem); */
+    font-size: clamp(2.4rem, 3vw, 6rem);
     
 }
 
@@ -37,6 +39,7 @@
     top: -10rem;
     /* margin-bottom: 100px; */
     padding-bottom: 100px;
+    background-color: var(--color-bg);
     
    
 }
@@ -58,8 +61,18 @@
     
     
 }
+.reviewCard__content h2{
+    font-size: 1em;
+}
 .reviewCard__content p{
+    margin-top: 10px;
     font-size: 0.6em;
+}
+
+.reviewCard__content__userName{
+    font-size: 0.4em;
+    text-align: right;
+    opacity: 50%;
 }
 
 

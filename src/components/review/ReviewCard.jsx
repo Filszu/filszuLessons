@@ -108,6 +108,7 @@ const ReviewCard = ({reviews}) => {
           <div className="reviewCard__content">
             <h2>{review.reviewTitle}</h2>
             <p>{review.reviewBody}</p>
+            <p className="reviewCard__content__userName">{review.userName}</p>
           </div>
          
          

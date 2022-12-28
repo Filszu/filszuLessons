@@ -12,10 +12,10 @@ function App() {
   return (
    <>
     <div className="app">
-    <ReviewsSection content={pageTextContent['reviews']}/>  
+    
       <Header content={pageTextContent['header']}/>
       <MainSection content={pageTextContent['main']}/>    
-      {/* <ReviewsSection content={pageTextContent['reviews']}/>     */}
+      <ReviewsSection content={pageTextContent['reviews']}/>    
       <ContactSection content={pageTextContent['contact']}/>    
 
 
