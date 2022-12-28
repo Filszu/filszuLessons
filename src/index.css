@@ -21,6 +21,7 @@
   --color-text-yellow: #f7e800;
   --color-section-yellow: rgb(255, 234, 0);
   --color-elements:rgb(255, 225, 0);
+  --color-elements-dark: hsl(205, 46%, 33%);
 
   
   font-size: 80%;

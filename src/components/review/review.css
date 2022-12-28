@@ -78,6 +78,25 @@
 
 }
 
+.reviewCard__nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.reviewCard__nav__dot{
+    border-radius: 50%;
+    background-color: var(--color-elements-dark);
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+.reviewCard__nav__dot--active{
+    background-color: var(--color-section-yellow);
+    /* transform: scale(1.5); */
+}
+
 
 
 @media screen and (max-width:1024px) {
