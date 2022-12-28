@@ -49,7 +49,7 @@ const pageContent = {
             title:`You can trust me :)`,
             reviews:[
                 {
-                    reviewId:0,
+                    id:0,
                     reviewTitle:"BEST TUTOR",
                     reviewBody:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nulla facilis neque corporis beatae omnis id mollitia? ",
                     stars: 5,
@@ -58,7 +58,7 @@ const pageContent = {
 
                 },
                 {
-                    reviewId:1,
+                    id:1,
                     reviewTitle:"TITLE",
                     reviewBody:"em ipsum dolor sit amet, consectetur adipisicing elit. Assum",
                     date:"",
@@ -68,7 +68,7 @@ const pageContent = {
 
                 },
                 {
-                    reviewId:3,
+                    id:2,
                     reviewTitle:"TITLE",
                     reviewBody:"em ipsum dolor sit amet, consectetur adipisicing elit. Assumem ipsum dolor sit amet, consectetur adipisicing elit. Assum",
                     date:"",

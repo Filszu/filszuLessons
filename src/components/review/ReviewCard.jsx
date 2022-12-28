@@ -115,7 +115,7 @@ const ReviewCard = ({reviews}) => {
       </AnimatePresence>
       {/* <ReviewCardControll handleClick={() =>paginate(-1)} text={"➜"}/> */}
       <ScrollDotsNav 
-        lenght={reviews.length} 
+        items={reviews} 
         curr={currReview}
       />
     </motion.section>
