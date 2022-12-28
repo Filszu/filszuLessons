@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 
 import './review.css';
+import ReviewCardControll from "./ReviewCardControll";
+import ScrollDotsNav from "./ScrollDotsNav";
 
 
 const variants = {
@@ -70,16 +72,24 @@ const ReviewCard = ({reviews}) => {
 
   return (
 
-    <>
-      <AnimatePresence initial={false} custom={direction} className>
+    <motion.section className="reviewBox">
+
+      {/* <ReviewCardControll handleClick={() =>paginate(-1)} text={"<"}/> */}
+
+    
+      <AnimatePresence initial={false} custom={direction}>
         <motion.section className="reviewCard"
           drag="x"
           whileDrag={{ scale: 1.1 }}
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={1} //back to original pos
           dragTransition={{ bounceStiffness: 100, bounceDamping: 10 }}
-
+          custom={direction}
           variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          
 
           onDragEnd={(e, { offset, velocity }) => {
             const swipe = swipePower(offset.x, velocity.x);
@@ -95,12 +105,20 @@ const ReviewCard = ({reviews}) => {
           <div className="reviewCard__userImg">
             <img src={review.userProfileImg} alt="user" />
           </div>
-         <h2>{review.reviewTitle}</h2>
-         <p>{review.reviewBody}</p>
+          <div className="reviewCard__content">
+            <h2>{review.reviewTitle}</h2>
+            <p>{review.reviewBody}</p>
+          </div>
+         
          
         </motion.section>
       </AnimatePresence>
-    </>
+      {/* <ReviewCardControll handleClick={() =>paginate(-1)} text={"➜"}/> */}
+      <ScrollDotsNav 
+        lenght={reviews.length} 
+        curr={currReview}
+      />
+    </motion.section>
   )
 }
 

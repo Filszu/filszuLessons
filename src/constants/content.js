@@ -46,7 +46,7 @@ const pageContent = {
             ]
         },
         reviews:{
-            title:`You can trust me`,
+            title:`You can trust me :)`,
             reviews:[
                 {
                     reviewId:0,

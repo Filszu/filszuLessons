@@ -11,7 +11,7 @@ import './reviewsSection.css'
 
 function ReviewsSection({content}) {
   return (
-    <motion.section className='app__fullScreen fullScreenSection' id="learnWithMe"
+    <motion.section className='app__fullScreen fullScreenSection' id="reviews"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
