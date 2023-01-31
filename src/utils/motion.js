@@ -180,6 +180,23 @@ export const zoomIn = (delay, duration) => ({
   },
 });
 
+export const zoomInCustom = (delay, duration, scaleInit, opacityInit) => ({
+  hidden: {
+    scale: scaleInit? scaleInit:0,
+    opacity: opacityInit?opacityInit:0,
+  },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      delay,
+      duration,
+      ease: 'easeInOut',
+    },
+  },
+});
+
 export const footerVariants = {
   hidden: {
     opacity: 0,

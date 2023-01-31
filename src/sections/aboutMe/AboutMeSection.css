@@ -9,23 +9,40 @@
 }
 
 .app__aboutMe section{
-    width: 50%;
+    /* width: 50%; */
     height: 100%;
     display: flex;
     align-items: center;
 }
 
 .app__aboutMe__description{
+    width: 50%;
+    line-height: 3rem;
+    font-size: 2rem;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+}
 
+.app__aboutMe__description b{
+    background-color: var(--color-text-yellow);
+    color: black;
+    padding: 10px;
+    
 }
 
 
 .app__aboutMe__img{
-       
+    width: 50%;
+    /* padding: 15rem; */
 }
 .cornerImageContainer{
     position: relative; 
     padding: 4rem;
+    /* width: 50%; */
+    width: clamp(40rem, 50%, 80%);
+    /* width: 40rem; */
+    margin: auto;
     
 
 }
@@ -33,6 +50,7 @@
    width: 100%;
    border-radius: 3rem;
    /* margin: 5rem; */
+   /* padding: 2rem; */
 
     
   
@@ -77,5 +95,6 @@
 .imageCornerBorder--bottomCorner{
    right: 0;
    bottom: 0;
-   transform: rotate(180deg);
+   /* transform: rotate(180deg); */
+   rotate: 180deg;
 }

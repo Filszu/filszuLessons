@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-import {slideIn,staggerContainer} from '../../utils/motion'
+import {slideIn,staggerContainer,zoomIn,zoomInCustom} from '../../utils/motion'
 
 
 import { ReviewCard, TypingText } from '../../components'
@@ -26,15 +26,29 @@ function AboutMeSection({content}) {
         </div>
         <section className="app__aboutMe">
           <motion.section className='app__aboutMe__description'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error dicta eligendi perspiciatis alias veritatis sed a inventore cum eveniet adipisci possimus cumque optio necessitatibus nobis nemo in, natus rerum enim.
+            <article>
+              {content.desc}
+            </article>
+          
           
         </motion.section>
         <motion.section className='app__aboutMe__img'>
 
           <div className="cornerImageContainer">
-            <img src={filszuProfile2} alt="Filip (Filszu) profile"></img>
-            <div className="imageCornerBorder imageCornerBorder--topCorner"/>
-            <div className="imageCornerBorder imageCornerBorder--bottomCorner"></div>
+            <motion.img
+             src={filszuProfile2} alt="Filip (Filszu) profile"
+             variants={zoomInCustom(0,1,0.5,0.8)}
+             
+             />
+            <motion.div 
+              className="imageCornerBorder imageCornerBorder--topCorner"
+              variants={zoomInCustom(0.3,1)}
+              />
+            <motion.div 
+              className="imageCornerBorder imageCornerBorder--bottomCorner"
+              variants={zoomInCustom(0.3,1)}
+            
+            />
           </div>          
           
           
