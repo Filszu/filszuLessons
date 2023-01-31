@@ -33,7 +33,8 @@ function AboutMeSection({content}) {
 
           <div className="cornerImageContainer">
             <img src={filszuProfile2} alt="Filip (Filszu) profile"></img>
-            <div className="imageCornerBorder"/>
+            <div className="imageCornerBorder imageCornerBorder--topCorner"/>
+            <div className="imageCornerBorder imageCornerBorder--bottomCorner"></div>
           </div>          
           
           

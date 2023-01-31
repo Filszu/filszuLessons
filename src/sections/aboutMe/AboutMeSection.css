@@ -9,50 +9,30 @@
 }
 
 .app__aboutMe section{
-    flex-basis:50%;
-    /* height: 100%; */
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
 }
 
 .app__aboutMe__description{
-    flex-basis:60%;
+
 }
 
 
 .app__aboutMe__img{
-    flex-basis:40%;
-    width: 100%;
-    height: 80%;
-
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    position: relative;
-
-    
+       
 }
 .cornerImageContainer{
-    width: auto;
-    /* max-height: 80%; */
-    height: 100%;
-    width: 100%;
-    padding: 6rem;
-    object-fit: contain;
+    position: relative; 
+    padding: 4rem;
+    
 
 }
 .cornerImageContainer img{
-    /* width: 100%; */
-    width:100%;
-    height: 100%;
-   
-    /* object-fit: cover; */
-    border-radius: 3rem;
-    display: block;
-
-    /* border: 1rem double var(--color-text-yellow); */
-    margin:auto;
-    object-fit: contain;
+   width: 100%;
+   border-radius: 3rem;
+   /* margin: 5rem; */
 
     
   
@@ -64,8 +44,7 @@
     height: 10rem;
     /* background-color: var(--color-text-yellow); */
     position: absolute;
-    top: 0rem;
-    left:0rem;
+   
     /* margin: 2rem 3rem; */
     /* border-radius: 3rem; */
     /* background-color: aqua; */
@@ -82,14 +61,21 @@
     height: 20rem;
     display: block;
     /* background-color: red; */
-    border: 2rem double var(--color-text-yellow); 
+    border: 5rem double var(--color-text-yellow); 
     /* border-top: 2rem double var(--color-text-yellow); */
     /* border-left: 2rem double var(--color-text-yellow); */
     border-radius: 20%;
-    object-fit: contain;
+    object-fit: contain;   
+    
+}
 
-    
+.imageCornerBorder--topCorner{
+    top: 0;
+    left:0;
+}
 
-    
-    
+.imageCornerBorder--bottomCorner{
+   right: 0;
+   bottom: 0;
+   transform: rotate(180deg);
 }
