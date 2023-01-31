@@ -1,3 +1,9 @@
+.app__aboutMePage{
+    width: 100%;
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+
 .app__aboutMe{
     width: 100%;
     height: 100%;
@@ -9,17 +15,18 @@
 }
 
 .app__aboutMe section{
-    /* width: 50%; */
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
 .app__aboutMe__description{
-    width: 50%;
+   
     line-height: 3rem;
-    font-size: 2rem;
-    padding: 20px;
+    /* font-size: 2rem; */
+    font-size: clamp(1rem, 3vw, 2rem);
+    padding: 0 4rem;
     display: flex;
     justify-items: center;
 }
@@ -33,7 +40,7 @@
 
 
 .app__aboutMe__img{
-    width: 50%;
+   
     /* padding: 15rem; */
 }
 .cornerImageContainer{
@@ -97,4 +104,28 @@
    bottom: 0;
    /* transform: rotate(180deg); */
    rotate: 180deg;
+}
+
+
+@media screen and (max-width:1024px){
+    .app__aboutMePage{
+        scroll-snap-align:none;
+    }
+    .app__aboutMe{
+        /* display: block; */
+        flex-wrap: wrap-reverse;
+        min-height: 100vh;
+        
+    }
+    .app__aboutMe section{
+        width: 100%;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+    .app__aboutMe__description{
+        padding: 8rem;
+    }
+    .aboutMePage__header{
+        display: none;
+    }
 }

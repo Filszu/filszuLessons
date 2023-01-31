@@ -6,6 +6,7 @@ import {pageContent} from './constants/content'
 import ReviewsSection from './sections/reviews/ReviewsSection';
 
 function App() {
+  console.log('%c hello DEV, use arrows to navigate ;)\n (it\'s still beta)', 'color: lime');
   const browserLang = navigator.language || navigator.userLanguage;
   console.log(browserLang);
 
@@ -16,8 +17,7 @@ function App() {
   return (
    <>
     <div className="app">
-    
-      <AboutMeSection content={pageTextContent['aboutMe']}/>
+      {/* <AboutMeSection content={pageTextContent['aboutMe']}/> */}
       <Header content={pageTextContent['header']}/>
       <MainSection content={pageTextContent['main']}/>    
       <AboutMeSection content={pageTextContent['aboutMe']}/>

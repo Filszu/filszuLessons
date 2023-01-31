@@ -53,7 +53,7 @@ const pageContent = {
                 My passion is <b>🥋&nbsp;martial&nbsp;arts&nbsp;🥊</b> (kyokushin and K-1), which I&nbsp;have been training since I&nbsp;was 7.
                 <br /><br />
                 Also, I&nbsp;really enjoy teaching and working with my students.
-                I&nbsp;enjoy watching my students learning new things and making <b>great&nbsp;progress📈</b><br /><br />
+                I&nbsp;enjoy watching my students learning new things and making <b>great&nbsp;progress&nbsp;📈</b><br /><br />
                 My lessons are relaxing, although I give a good dose of knowledge during them.
             </>
 
@@ -121,7 +121,7 @@ const pageContent = {
                 {
                     img:'github_white.svg',
                     imgDesc:'github',
-                    url: 'https://github.com/Filszu/',
+                    url: 'https://github.com/Filszu/filszuLessons',
                     desc:'Filszu'
                 },
                 {

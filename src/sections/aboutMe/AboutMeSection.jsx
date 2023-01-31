@@ -13,32 +13,32 @@ import filszuProfile2 from '../../assets/img/filszuProfile.jpg'
 
 function AboutMeSection({content}) {
   return (
-    <motion.section className='app__fullScreen fullScreenSection'
+    <motion.section className='app__aboutMePage'
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-        <div className="app__fullScreen__header">
+        <div className="app__fullScreen__header aboutMePage__header">
           {/* <h1>{content.title}</h1> */}
           {/* {} */}
           <TypingText title={content.title}/>
         </div>
         <section className="app__aboutMe">
-          <motion.section className='app__aboutMe__description' 
+          <section className='app__aboutMe__description' 
 
-          variants={slideIn('left','linear',0.3,1)}
-          // variants={fadeIn('right', 'spring', 0.2, 2)}
+          // variants={slideIn('left','linear',0.3,1)}
+          // variants={fadeIn('right', 'spring', 0, 2)}
           >
             <article>
               {content.desc}
             </article>
           
           
-        </motion.section>
+        </section>
         <motion.section className='app__aboutMe__img'>
 
-          <div className="cornerImageContainer">
+          <div className="cornerImageContainer" id="aboutMe">
             <motion.img
              src={filszuProfile2} alt="Filip (Filszu) profile"
              variants={zoomInCustom(0,1,0.5,0.8)}
