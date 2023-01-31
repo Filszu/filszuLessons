@@ -45,12 +45,16 @@ const pageContent = {
                 
             ]
         },
+        aboutMe:{
+            title:"About me",
+            
+        },
         reviews:{
             title:`You can trust me :)`,
             reviews:[
                 {
                     id:0,
-                    reviewTitle:"Zna się na rzeczy",
+                    reviewTitle:"Jest profesjonalistą w swoim fachu",
                     reviewBody:"Dzięki Filipowi nauczyłem się dużo więcej niż w szkole, programowanie stało się moją pasją a jego nauki weszły mi głęboko do głowy, mogę powiedzieć że bardzo polecam!",
                     date:"",
                     stars: 5,
@@ -64,7 +68,7 @@ const pageContent = {
                     reviewBody:"...Filszu. Widać, że znasz się na rzeczy",
                     date:"",
                     stars: 5,
-                    userProfileImg:"https://scontent.fpoz5-1.fna.fbcdn.net/v/t39.30808-6/306949728_579037663921392_9108915645010585965_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_c6pgWSCLXkAX9spXEr&_nc_ht=scontent.fpoz5-1.fna&oh=00_AfC1GF7P5vY4hRVLJiLmLMZEiZLR-5EYG9UmqFlWoQN12A&oe=63B15D41",
+                    userProfileImg:"https://media.discordapp.net/attachments/963178232457342977/1066752836886609940/306949728_579037663921392_9108915645010585965_n.png",
                     userName:"Aleks P."
 
                 },
@@ -83,7 +87,7 @@ const pageContent = {
                     reviewBody:"Bardzo dobry nauczyciel naprawde polecam",
                     date:"",
                     stars: 5,
-                    userProfileImg:"https://avatars.dicebear.com/api/micah/konradinio.svg",
+                    userProfileImg:"https://cdn.discordapp.com/attachments/963178232457342977/1066756649492156456/konraddino.png",
                     userName:"Konradinio"
 
                 },
