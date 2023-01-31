@@ -50,10 +50,10 @@ const pageContent = {
             desc:<>
                 Hi, I'm Filip, software developer and I've been crazy about programming since I was a kid.
                 <br /><br />
-                My passion is <b>🥋&nbsp;martial&nbsp;arts&nbsp;🥊</b>(kyokushin and K-1), which I have been training since I was 7.
+                My passion is <b>🥋&nbsp;martial&nbsp;arts&nbsp;🥊</b> (kyokushin and K-1), which I&nbsp;have been training since I&nbsp;was 7.
                 <br /><br />
-                Also, I really enjoy teaching and working with my students.
-                I enjoy watching my students learn new things all the time and make <b>great&nbsp;progress📈</b><br /><br />
+                Also, I&nbsp;really enjoy teaching and working with my students.
+                I&nbsp;enjoy watching my students learning new things and making <b>great&nbsp;progress📈</b><br /><br />
                 My lessons are relaxing, although I give a good dose of knowledge during them.
             </>
 

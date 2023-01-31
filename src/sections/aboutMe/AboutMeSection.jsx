@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-import {slideIn,staggerContainer,zoomIn,zoomInCustom} from '../../utils/motion'
+import {slideIn,staggerContainer,zoomIn,zoomInCustom,fadeIn} from '../../utils/motion'
 
 
 import { ReviewCard, TypingText } from '../../components'
@@ -25,7 +25,11 @@ function AboutMeSection({content}) {
           <TypingText title={content.title}/>
         </div>
         <section className="app__aboutMe">
-          <motion.section className='app__aboutMe__description'>
+          <motion.section className='app__aboutMe__description' 
+
+          variants={slideIn('left','linear',0.3,1)}
+          // variants={fadeIn('right', 'spring', 0.2, 2)}
+          >
             <article>
               {content.desc}
             </article>
