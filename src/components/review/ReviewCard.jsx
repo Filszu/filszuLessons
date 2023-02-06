@@ -95,9 +95,9 @@ const ReviewCard = ({reviews}) => {
             const swipe = swipePower(offset.x, velocity.x);
 
             if (swipe < -swipeConfidenceThreshold) {
-              paginate(-1);
-            } else if (swipe > swipeConfidenceThreshold) {
               paginate(1);
+            } else if (swipe > swipeConfidenceThreshold) {
+              paginate(-1);
             }
           }}
 
