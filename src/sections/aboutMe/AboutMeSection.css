@@ -2,6 +2,10 @@
     width: 100%;
     min-height: 100vh;
     scroll-snap-align: start;
+    display: grid;
+    place-items: center;
+   
+    
 }
 
 .app__aboutMe{

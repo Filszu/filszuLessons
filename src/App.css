@@ -110,7 +110,7 @@ a{
 }
 
 *::-webkit-scrollbar-track {
-  background: #12181b;
+  /* background: #12181b; */
 }
 
 *::-webkit-scrollbar-thumb {
