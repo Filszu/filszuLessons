@@ -119,3 +119,9 @@ a{
   /* border-radius: 1rem;  */
   
 }
+
+*::selection{
+  color: #040f1f;
+  background-color: rgba(247, 231, 0, 0.89);
+  
+}
