@@ -48,12 +48,11 @@ const pageContent = {
         aboutMe:{
             title:"About me",
             desc:<>
-                Hi, I'm Filip, software developer and I've been crazy about programming since I was a kid.
+                Hi, I'm Filip, a software developer and I've been crazy about programming since I was a kid.
                 <br /><br />
                 My passion is <b>🥋&nbsp;martial&nbsp;arts&nbsp;🥊</b> (kyokushin and K-1), which I&nbsp;have been training since I&nbsp;was 7.
                 <br /><br />
-                Also, I&nbsp;really enjoy teaching and working with my students.
-                I&nbsp;enjoy watching my students learning new things and making <b>great&nbsp;progress&nbsp;📈</b><br /><br />
+                Also, I&nbsp;enjoy teaching and working with my students. I&nbsp;enjoy watching my students learn new things and&nbsp;make&nbsp;<b>great&nbsp;progress&nbsp;📈</b><br /><br />
                 My lessons are relaxing, although I give a good dose of knowledge during them.
             </>
 
