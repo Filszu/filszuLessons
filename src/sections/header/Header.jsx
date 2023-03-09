@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-import {fadeIn,filszuFadeIn,staggerContainer} from '../../utils/motion'
+import {fadeIn,filszuFadeIn,staggerContainer, zoomIn} from '../../utils/motion'
 
 // imports img
 import filszuOK from '../../assets/img/filszuOK2min.png'
@@ -12,6 +12,10 @@ import './header.css'
 import { ListElement } from '../../components'
 
 function Header({content}) {
+
+    // another animation delay time for mobile
+const isMobile = window.innerWidth <= 1024;
+
   return (
     <header className='app__header' id="header"> 
     {/* fullScreenSection */}
@@ -29,14 +33,14 @@ function Header({content}) {
                 
                 <motion.h1
                     // variants={slideIn('down','spring',1,1)}
-                    variants={fadeIn('down', 'spring', 1.5, 1)}
+                    variants={fadeIn('down', 'spring', isMobile ? 0.1 :1.5, 1)}
 
                 >{content.title}</motion.h1>
 
                 {/* separate to another gtid elemnts */}
                 
                 <motion.h2
-                     variants={fadeIn('down', 'spring', 1.6,1)}
+                     variants={fadeIn('down', 'spring', isMobile ? 0.2 :1.6,1)}
                 >{content.subtitle}</motion.h2>
 
                 
@@ -59,7 +63,7 @@ function Header({content}) {
             
                 <motion.div
                     // variants={planetVariants('right')}
-                    variants={filszuFadeIn()}
+                    variants={!isMobile ? filszuFadeIn():zoomIn(0,0.6)}
                     // initial="hidden"
                     // exit="exit"
                     
@@ -79,7 +83,7 @@ function Header({content}) {
             >
                 
                 <motion.h3
-                     variants={fadeIn('down', 'spring', 1.8,1)}
+                     variants={fadeIn('down', 'spring', isMobile ? 0 :1.8,1)}
                 >{content.listTitle}</motion.h3> 
                 
                 
@@ -90,6 +94,7 @@ function Header({content}) {
                         el={content}
                         showPrefix={true}
                         index={index + 1}
+                        baseDelay={isMobile ? 0.2 : undefined}
                     
                     />))}
                 </ul>
