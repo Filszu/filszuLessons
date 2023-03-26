@@ -9,7 +9,11 @@
     /* flex: clamp(5rem,15rem,15rem); */
     /* width: clamp(6rem,60%,25rem); */
 
-    width: 25rem;
+    /* width: 25rem; */
+    width: 300px;
+
+    /* font-size: clamp(100px, 2vw, 400px); */
+
     /* flex:1; */
     /* width: 100%; */
     /* flex-basis:1; */
@@ -51,17 +55,27 @@
   }
 
 
-   @media screen and (max-width:1200px) {
+  @media screen and (max-width:1700px) {
     .logo__container__el{
 
-        width: 18rem;
+        /* width: 18rem; */
+        width: 280px;
+    }
+  }
+
+  @media screen and (max-width:1200px) {
+    .logo__container__el{
+
+        /* width: 18rem; */
+        width: 240px;
     }
   }
 
   @media screen and (max-width:1024px) {
     .logo__container__el{
         
-        width: 15rem;
+        /* width: 15rem; */
+        width: 200px;
         padding: 20px;
     }
   }
@@ -69,15 +83,17 @@
   @media screen and (max-width:768px) {
     .logo__container__el{
        
-        width: 10rem;
+        /* width: 10rem; */
+        width: 130px;
     }
   }
   @media screen and (max-width:380px) {
     .logo__container__el{
    
-      width: 7rem;
+      /* width: 7rem; */
+      width: 110px;
         flex:1;
-        /* padding: 10px; */
+     
         margin: 0;
     }
-  } 
+  }  
