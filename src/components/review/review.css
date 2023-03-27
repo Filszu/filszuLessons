@@ -19,6 +19,7 @@
     /* font-size: clamp(3rem, 4vw, 6rem); */
     /* font-size: clamp(2rem, 3vw, 5rem); */
     font-size: clamp(2.4rem, 3vw, 6rem);
+    cursor: grab;
     
 }
 
