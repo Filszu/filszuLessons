@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-import {fadeIn,filszuFadeIn,staggerContainer, zoomIn} from '../../utils/motion'
+import {fadeIn,filszuFadeIn,slideIn,staggerContainer, zoomIn} from '../../utils/motion'
 
 // imports img
 import filszuOK from '../../assets/img/filszuOK2min.png'
@@ -63,7 +63,9 @@ const isMobile = window.innerWidth <= 1024;
             
                 <motion.div
                     // variants={planetVariants('right')}
-                    variants={!isMobile ? filszuFadeIn():zoomIn(0,0.6)}
+                    // variants={!isMobile ? filszuFadeIn():zoomIn(0,0.6)}
+                    // variants={!isMobile ? filszuFadeIn():slideIn('up','spring',0,2)}
+                    variants={!isMobile ? filszuFadeIn():slideIn('up','Tween',0,1)}
                     // initial="hidden"
                     // exit="exit"
                     
